@@ -43,6 +43,10 @@ function App() {
           })
   }
 
+  const handlTest = ()=>{
+    console.log(currentEmployee);
+  }
+
   const deleteEmployee = (id) =>{ 
 
         setEmployees(employees.filter((item) => item.id != id))
@@ -126,6 +130,7 @@ function App() {
                   <div className="d-flex justify-content-start my-2">
 
                     <button type="submit" className='btn btn-primary' onClick={handleSubmit}>Add Employee</button>
+                    <button className='btn btn-warning' onClick={handlTest}>Test</button>
                   </div>
               </form>
             </div>
